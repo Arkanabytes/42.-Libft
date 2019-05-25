@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/14 19:00:13 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/16 05:04:00 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include <stdlib.h>
 
-int		ft_isprint(int c)
+void	ft_memdel(void **ap)
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
-}
-
-int		main(void)
-{
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
-	return (0);
+	if (ap != NULL)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }

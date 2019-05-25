@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 20:49:01 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/15 21:26:40 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int		ft_isprint(int c)
+int ft_strnequ(char const *s1, char const *s2, size_t n;
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
-}
+	int i;
+	while (s1[i] = \'0' &&  s2[i] = '\0')
 
-int		main(void)
-{
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
+	return (1);
+	if 
 	return (0);
+
 }
+

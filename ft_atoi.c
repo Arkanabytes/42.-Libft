@@ -6,16 +6,17 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 15:18:43 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/13 16:04:10 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/25 04:02:29 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-int		ft_putchar(char c)
+void		ft_putchar(char c)
 {
-	void(1 , &c, 1);
+	write(1 , &c, 1);
 }
 
 void	spc_chr(char *s, int *i)

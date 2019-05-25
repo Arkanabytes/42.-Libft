@@ -6,29 +6,39 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 15:09:14 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/03 21:15:02 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/16 16:16:15 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+
+void	ft_putchar(char c)
 {
-	void(1, &c, 1);
+	write(1, &c, sizeof(c));
 }
 
 void	ft_putnbr(int nb)
 {
-	if (nb <= 0)
+	unsigned int s;
+
+	s = 0;
+	if (nb >= 0)
+		s = nb;
+	if (nb < 0)
 	{
+		s = nb * -1;
 		ft_putchar('-');
-		ft_putnbr(nb);
 	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10 + '0' + '0');
-	}
-	else
-	{
-		ft_putchar(nb + '0');
-	}
+	if (s > 9)
+		ft_putnbr(s / 10);
+	ft_putchar((s % 10) + '0');
+}
+
+int		main(void)
+{
+	int a;
+
+	a = 2555;
+	ft_putnbr(a);
+	return (0);
 }

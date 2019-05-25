@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 13:56:53 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/16 05:42:56 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
 #include <stdio.h>
 
-int		ft_isprint(int c)
+void*	ft_memalloc(size_t size)
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
-}
+	int i;
 
-int		main(void)
-{
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
-	return (0);
+	i = 0;
+	int * i = (int *)malloc(100);
+	return (NULL);
 }

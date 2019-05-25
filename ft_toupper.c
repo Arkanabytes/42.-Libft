@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 16:50:31 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/13 00:43:39 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/16 05:24:23 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,18 @@
 
 int			ft_toupper(int c)
 {
-	if ((c >= 'a') && (c <='z'))
+	if ((c >= 'a') && (c <= 'z'))
 	{
-		return (c-32);
+		return (c - 32);
 	}
 	return (c);
 }
 
-int		main()
+int			main(void)
 {
-	int j = 0;
+	int j;
+
+	j = 0;
 	char str[] = "Prova";
 	char ch;
 

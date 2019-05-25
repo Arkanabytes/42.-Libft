@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/17 03:47:13 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/17 03:58:42 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
 #include <stdio.h>
+#include <unistd.h>
 
-int		ft_isprint(int c)
+void	ft_putchar(char c)
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
+	write(1 , &c, 1);
 }
 
-int		main(void)
+int main()
 {
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
+	char ch = 'G';
+	ft_putchar(ch);
 	return (0);
 }

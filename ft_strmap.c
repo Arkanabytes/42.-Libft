@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 20:02:29 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/23 16:34:51 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include <stdlib.h>
 
-int		ft_isprint(int c)
+char			*ft_strmap(char const *s, char (*f)(char))
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
-}
+	int			i;
+	char		*str;
 
-int		main(void)
-{
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
-	return (0);
+	if (!s)
+		return (NULL);
+	if (!(str = (char *)malloc(sizeof(char) *ft_strlen(s) + 1)))
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		str[i]= f(s[i]);
+		i + = 1;
+	}
+	str[i] = '\0';
+	return (str);
 }

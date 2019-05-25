@@ -1,30 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 17:36:56 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/19 02:30:13 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include <stdlib.h>
 
-int		ft_isprint(int c)
+void	ft_striteri(char *s, void	(*f)(unsigned int, char *))
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
+	int		i;
+	
+	i = 0;
+	while(s[i] != '\0')
+	{
+		s[i] = *f(char *);
+		i++;
+	}
+	return (0);
 }
 
 int		main(void)
 {
-	char c;
+	int j;
 
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
+	j = 0;
+	char str[] = "Prova";
+	char ch[] = "P";
+	while (str[j])
+	{
+		ch = str[j];
+		ft_putchar(ft_striteri(ch));
+		j++;
+	}
 	return (0);
 }

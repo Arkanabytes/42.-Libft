@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/16 16:17:36 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/17 01:36:32 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include <stdlib.h>
 
-int		ft_isprint(int c)
+void	ft_putendl(char const *s)
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
-}
+	int i;
 
-int		main(void)
-{
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
-	return (0);
+	i = 0;
+	if(!s)
+		return ;
+	while(s[i])
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
+	write(1,'\n', 1);
 }

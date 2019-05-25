@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:38:45 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/13 16:11:29 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/19 03:11:06 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ int			ft_tolower(int c)
 	return (c);
 }
 
-void		main()
+void		main(void)
 {
-	int j = 0;
+	int j;
+
+	j = 0;
 	char str[] = "Prova";
 	char ch;
 

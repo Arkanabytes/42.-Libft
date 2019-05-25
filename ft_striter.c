@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 15:35:58 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/19 02:13:48 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include <unistd.h>
 
-int		ft_isprint(int c)
+void ft_striter(char *s, void(*f)(char *))
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
+	if (s)
+	{
+		for (int i = 0; s[i]; i++)
+		{
+			f(&s[i]);
+		}
+	}
+	return ;
 }
 
-int		main(void)
+int main(void)
 {
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
+	char a[10] = "100";
+	int value = atoi(a);
+	printf("valor = %d\n", value);
 	return (0);
 }

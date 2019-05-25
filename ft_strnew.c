@@ -1,30 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/08 19:49:34 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 04:53:33 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/15 13:59:30 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/24 04:15:01 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
-int		ft_isprint(int c)
+char				*ft_strnew(size_t size)
 {
-	return (c >= 32 && c <= 126 ? 1 : 0);
+	unsigned long	i;
+	char			*str;
+
+	i = 0;
+	if (!(str = (char *)malloc(sizeof(char) * size + 1)))
+		return (NULL);
+	while (size >= i)
+	{
+		str[i] = '\0';
+		i += 1;
+	}
+	return (str);
 }
 
-int		main(void)
+int main () 
 {
-	char c;
-
-	c = 'Q';
-	printf("Result %c isprint %d", c, isprint(c));
-	c = '\n';
-	printf("Result %c  isprint %d", c, isprint(c));
-	return (0);
+   char *str;
+   str = ft_strnew(4);
+// printf("%s\n", str);
+   strcpy(str, "Hola");
+   printf("You entered: %s", str);
+   return	(0);
 }
