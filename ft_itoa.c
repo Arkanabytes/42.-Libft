@@ -56,7 +56,7 @@ char*	ft_itoa(int n)
 
 
 
-
+/*
 char	*ft_strappend(char *src, char c)
 {
 	char	*str;
@@ -97,3 +97,5 @@ char*	ft_itoa(int n)
 	}
 	return (str);
 }
+
+*/

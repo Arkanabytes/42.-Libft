@@ -34,6 +34,8 @@ SRCS    = ft_putchar_fd.c \
 		ft_putnbr_fd.c \
 		ft_putnbr.c \
 		ft_strcat.c \
+		ft_strncat.c \
+		ft_strncat.c \
 		ft_strcmp.c \
 		ft_strcpy.c \
 		ft_strlen.c \
