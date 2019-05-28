@@ -14,8 +14,6 @@
 
 void	sc(char *s, int *i)
 {
-    ft_putchar(c);
-
 	while ((s[*i] == ' ') || 
         (s[*i] == '\v') ||
         (s[*i] == '\r')|| 

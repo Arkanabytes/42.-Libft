@@ -14,10 +14,6 @@
 
 void			*ft_memchr(const void *s, int c, size_t n)
 {
-	const void *s;
-	int			c;
-	size_t		n;
-	{
 		if (n != 0)
 		{
 			const unsigned char *p = s;
@@ -29,5 +25,4 @@ void			*ft_memchr(const void *s, int c, size_t n)
 			while (--n != 0);
 		}
 		return (NULL);
-	}
 }

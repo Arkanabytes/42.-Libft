@@ -38,7 +38,10 @@ SRCS    = ft_putchar_fd.c \
 		ft_strcpy.c \
 		ft_strlen.c \
 		ft_tolower.c \
-		ft_toupper.c 
+		ft_toupper.c \
+		ft_putendl_fd.c \
+		ft_putstr_fd.c \
+		ft_putnbr_fd.c
 OBJS    = $(SRCS:.c=.o)
 
 all: $(NAME)
