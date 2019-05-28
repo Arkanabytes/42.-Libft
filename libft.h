@@ -21,6 +21,7 @@ char    *ft_strcat(char *s1, const char *s2);
 int     ft_strcmp(char *s1, char *s2);
 char    *ft_strcpy(char *dst, char *src);
 int		ft_strlen(const char *s);
+char    *ft_strnew(size_t size);
 int     ft_tolower(int c);
 int	    ft_toupper(int c);
 void	ft_putstr_fd(char const *s, int fd);
