@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_srca(char *src, char c)
+static char	*ft_srca(char *src, char c)
 {
 	char	*str;
 	char	*i;
@@ -26,8 +26,8 @@ char	*ft_srca(char *src, char c)
 	return (str);
 }
 
-void	rec(char **str, int n) {
-
+static void	rec(char **str, int n) 
+{
 	if ((n / 10) > 0)
 		rec(str, n / 10);
 	*str = ft_srca(*str, (n % 10) + '0');
