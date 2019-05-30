@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/15 20:49:01 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/15 21:26:40 by copinto-         ###   ########.fr       */
+/*   Created: 2019/05/03 23:58:53 by copinto-          #+#    #+#             */
+/*   Updated: 2019/05/12 21:15:13 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strnequ(char const *s1, char const *s2, size_t n)
+int		ft_isalpha(int c)
 {
-	return (!ft_strncmp(s1 , s2, n));
+	if(ft_tolower(c) || ft_toupper(c))
+	return(1);
+	else 
+	return(0);
 }

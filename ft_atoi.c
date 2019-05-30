@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void	sc(char *s, int *i)
+void	sc(char *s, int *i)
 {
 	while ((s[*i] == ' ') || 
         (s[*i] == '\v') ||

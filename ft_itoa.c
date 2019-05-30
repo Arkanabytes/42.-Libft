@@ -10,92 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static char	*ft_srca(char *src, char c)
+#include "libft.h"
+
+char	*ft_itoa(int n)
 {
-	char	*str;
-	char	*i;
-
-	str = malloc(sizeof(char *) * (ft_strlen(src) + 2));
-	if (str)
-	{
-		i = ft_strcpy(str, src);
-		*i++ = c;
-		*i = '\0';
-		free(src);
-	}
-	return (str);
-}
-
-static void	rec(char **str, int n) 
-{
-	if ((n / 10) > 0)
-		rec(str, n / 10);
-	*str = ft_srca(*str, (n % 10) + '0');
-
-}
-
-char*	ft_itoa(int n)
-{
+	int		len;
+	long	nb;
+	char	*res;
 	char	*str;
 
-	str = ft_strnew(1);
-	if (str)
+	str = "0123456789";
+	len = n < 0 ? 1 : 0;
+	nb = n < 0 ? -(long)n : n;
+	len = ft_lol(nb, len);
+	len = (n == 0) ? 1 : len;
+	if (!(res = (char *)malloc(sizeof(char) * (len + 1))))
+		return (NULL);
+	if (n == 0)
+		res[0] = '0';
+	res[len] = '\0';
+	nb = n < 0 ? -(long)n : n;
+	while (nb > 0)
 	{
-		if (n < 0)
-		{
-			n = -n;
-			str = ft_srca(str, '-');
-		}
-		rec(&str, n);
+		res[--len] = str[nb % 10];
+		nb /= 10;
 	}
-	return (str);
+	if (n < 0)
+		res[0] = '-';
+	return (res);
 }
-
-
-
-
-
-
-/*
-char	*ft_strappend(char *src, char c)
-{
-	char	*str;
-	char	*itr;
-
-	str = malloc(sizeof(char *) * (ft_strlen(src) + 2));
-	if (str)
-	{
-		itr = ft_stpcpy(str, src);
-		*itr++ = c;
-		*itr = '\0';
-		free(src);
-	}
-	return (str);
-}
-
-void	append_digit_recursive(char **str, int n) {
-
-	if ((n / 10) > 0)
-		append_digit_recursive(str, n / 10);
-	*str = ft_strappend(*str, (n % 10) + '0');
-
-}
-
-char*	ft_itoa(int n)
-{
-	char	*str;
-
-	str = ft_strnew(1);
-	if (str)
-	{
-		if (n < 0)
-		{
-			n = -n;
-			str = ft_strappend(str, '-');
-		}
-		append_digit_recursive(&str, n);
-	}
-	return (str);
-}
-
-*/
