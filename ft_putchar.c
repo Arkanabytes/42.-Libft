@@ -6,13 +6,13 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 02:38:55 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/27 02:39:51 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 04:33:02 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    ft_putchar_fd(c, 1);
+	ft_putchar_fd(c, 1);
 }

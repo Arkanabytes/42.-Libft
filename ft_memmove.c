@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 15:06:43 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/16 05:47:10 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 02:40:16 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void			*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	i;
-	char	*d;
-	char	*s;
+	size_t		i;
+	char		*d;
+	char		*s;
 
 	d = (char*)dst;
 	s = (char*)src;

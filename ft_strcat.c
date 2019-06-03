@@ -6,16 +6,16 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 20:54:22 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/08 16:01:52 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 21:16:45 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcat(char *s1, const char *s2)
+char		*ft_strcat(char *s1, const char *s2)
 {
-	char *c = s1;
-
+	char	*c = s1;
+	
 	while (*s1 != '\0')
 	{
 		s1++;

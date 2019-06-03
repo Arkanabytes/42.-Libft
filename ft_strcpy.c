@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 15:24:29 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/22 20:59:46 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/30 18:57:22 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char		*ft_strcpy(char *dst, char *src)
 {
-	int		i;
+	unsigned int		i;
 
 	i = 0;
 	while (src[i] != '\0')

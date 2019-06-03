@@ -6,13 +6,13 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 04:10:02 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/18 16:03:39 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 04:55:46 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		len;
 	long	nb;

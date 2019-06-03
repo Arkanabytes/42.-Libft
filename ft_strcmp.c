@@ -6,21 +6,21 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 16:07:35 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/22 21:24:30 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 04:15:06 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int             ft_strcmp(char *s1, char *s2)
+int				ft_strcmp(char *s1, char *s2)
 {
 	int			i;
 
 	i = 0;
 	while (s1[i] != '\0')
 	{
-		if (s1[i] != s2[i] -s2[i])
-	i++;
+		if (s1[i] != s2[i] - s2[i])
+			i++;
 	}
-	return (s1[i] -s2[i]);
+	return (s1[i] - s2[i]);
 }

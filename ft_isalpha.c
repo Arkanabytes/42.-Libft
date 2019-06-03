@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 23:58:53 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/12 21:15:13 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/05/31 03:22:41 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int		ft_isalpha(int c)
 {
-	if(ft_tolower(c) || ft_toupper(c))
-	return(1);
-	else 
-	return(0);
+	if (ft_tolower(c) || ft_toupper(c))
+		return (1);
+	else
+		return (0);
 }
