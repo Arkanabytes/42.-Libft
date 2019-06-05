@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/03 21:23:58 by copinto-          #+#    #+#             */
+/*   Updated: 2019/06/03 21:28:53 by copinto-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t n)
+char			*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t   i;
-	char	*j;
-	char	*k;
+	size_t		i;
+	char		*j;
+	char		*k;
 
 	if (!*s2)
 		return ((void *)s1);

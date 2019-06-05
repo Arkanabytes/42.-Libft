@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 15:37:01 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/02 15:48:51 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/03 19:16:56 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,14 @@
 
 char		*ft_strncpy(char *dst, const char *src, size_t n)
 {
-	char	*r;
+	char	*rosa;
 	size_t	com;
 
-	r = (char *)dst;
+	rosa = (char *)dst;
 	com = n;
 	while (*src && n--)
 		*dst++ = *src++;
 	if (n < com)
 		ft_bzero(dst, n);
-	return (r);
+	return (rosa);
 }
-
-/*
-char		*ft_strncpy(char *dest, char *src, unsigned int n)
-{
-	unsigned int		i;
-	char	*temp;
-
-	temp = dest;
-	i = 0;
-	while (i <  n)
-	{
-		while (src[i] != '\0')
-		{
-			dest[i] = '\0';
-			i++;
-		}
-	}
-	return (dest);
-}
-*/

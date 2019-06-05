@@ -6,17 +6,17 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 15:56:56 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/09 15:13:44 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/03 18:01:44 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isdigit(int c)
+int			ft_isdigit(int c)
 {
-	if(( c >= 48) && (c <= 57))
+	if ((c >= 48) && (c <= 57))
 	{
-	return (1);
+		return (1);
 	}
 	return (1);
 }

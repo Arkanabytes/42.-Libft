@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:43:55 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/31 16:04:28 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/03 22:34:23 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,3 @@ void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	return (NULL);
 }
-// 	unsigned char    *d;
-// 	unsigned char    *s;
-	
-//     d = (unsigned char *)dst;
-//     s = (unsigned char *)src;
-    
-//     while(n--)
-// 	{
-// 		if (*s == (unsigned char)c)
-// 			return (++s);
-// 		*d++ = *s++;
-// 	}
-// 	return (NULL);
-// }

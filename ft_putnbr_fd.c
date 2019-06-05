@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 02:38:55 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/27 02:39:51 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/04 00:29:01 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int nb, int fd)
+void				ft_putnbr_fd(int nb, int fd)
 {
-	unsigned int s;
+	unsigned int	s;
 
 	s = 0;
 	if (nb >= 0)
