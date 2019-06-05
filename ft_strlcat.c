@@ -6,23 +6,22 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 05:58:41 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/04 13:17:06 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/05 05:45:58 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			*ft_strcat(char *s1, const char *s2)
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int			late;
-	int			i;
+	size_t	izquierda;
 
-	i = 0;
-	late = ft_strlen(s1);
-	while (s2[i] != 0)
-	{
-		s1[late++] = s2[i++];
-	}
-	s1[late] = '\0';
-	return (s1);
+	izquierda = size;
+	while (*dst && izquierda > 0 && izquierda--)
+		dst++;
+	while (*src && izquierda > 1 && izquierda--)
+		*dst++ = *src++;
+	if (izquierda == 1)
+		*dst = '\0';
+	return (size - izquierda);
 }

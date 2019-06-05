@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	sc(char *s, int *i)
+void	ft_copinto_sc(char *s, int *i)
 {
 	while ((s[*i] == ' ') ||
 			(s[*i] == '\v') ||
@@ -31,7 +31,7 @@ int		ft_atoi(char *str)
 	i = 0;
 	n = 0;
 	s = 1;
-	sc(str, &i);
+	ft_copinto_sc(str, &i);
 	if (str[i] == '-')
 	{
 		if (str[i + 1] == '+')

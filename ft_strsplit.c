@@ -25,7 +25,7 @@ char		**ft_strsplit(char const *s, char c)
 	i = -1;
 	st = 0;
 	if (!s || (!(a = (char **)ft_memalloc((
-							ft_strcontador(s, c) + 1) * sizeof(char *)))))
+							ft_copinto_contador(s, c) + 1) * sizeof(char *)))))
 		return (NULL);
 	while (s[++i])
 	{

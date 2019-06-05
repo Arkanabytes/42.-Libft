@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strq.c                                          :+:      :+:    :+:   */
+/*   ft_copinto_issuper.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/04 17:57:10 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/04 17:58:29 by copinto-         ###   ########.fr       */
+/*   Created: 2019/06/05 06:35:25 by copinto-          #+#    #+#             */
+/*   Updated: 2019/06/05 06:36:10 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strq(const char **s1, char c)
+int		ft_copinto_isupper(int c)
 {
-	char	*str;
-
-	str = ft_straloca(*s1, c);
-	if (str)
-		*s1 = ft_stp(str, *s1, c);
-	return (str);
+	return ('A' <= c && c <= 'Z');
 }

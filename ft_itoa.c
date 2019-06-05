@@ -22,7 +22,7 @@ char		*ft_itoa(int n)
 	str = "0123456789";
 	len = n < 0 ? 1 : 0;
 	nb = n < 0 ? -(long)n : n;
-	len = ft_lol(nb, len);
+	len = ft_copinto_lol(nb, len);
 	len = (n == 0) ? 1 : len;
 	if (!(res = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);

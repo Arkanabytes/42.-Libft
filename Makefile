@@ -22,9 +22,9 @@ ft_isalpha.c \
 ft_isascii.c \
 ft_isdigit.c \
 ft_isprint.c \
-ft_isspace.c \
+ft_copinto_space.c \
 ft_itoa.c \
-ft_lol.c \
+ft_copinto_lol.c \
 ft_memalloc.c \
 ft_memccpy.c \
 ft_memchr.c \
@@ -68,8 +68,16 @@ ft_strstr.c \
 ft_strsub.c \
 ft_strtrim.c \
 ft_tolower.c \
-ft_strcontador.c \
-ft_toupper.c 
+ft_copinto_contador.c \
+ft_copinto_islower.c \
+ft_copinto_issuper.c \
+ft_toupper.c \
+ft_lstnew.c \
+ft_lstdelone.c \
+ft_lstdel.c \
+ft_lstadd.c \
+ft_lstiter.c \
+ft_lstmap.c
 OBJECTS = $(SRCS:.c=.o)
 
 all: $(NAME)

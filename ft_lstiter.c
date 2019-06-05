@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 15:53:17 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/05 03:07:59 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/05 06:37:56 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 	{
 		while (lst)
 		{
-			f (lst);
+			f(lst);
 			lst = lst->next;
 		}
 	}

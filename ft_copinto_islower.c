@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strld.c                                         :+:      :+:    :+:   */
+/*   ft_copinto_islower.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/04 19:30:52 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/04 19:32:05 by copinto-         ###   ########.fr       */
+/*   Created: 2019/06/05 06:41:36 by copinto-          #+#    #+#             */
+/*   Updated: 2019/06/05 06:41:49 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strld(const char *s, char c)
+int		ft_copinto_islower(int c)
 {
-	size_t	len;
-
-	len = 0;
-	while (*s && *s != c)
-	{
-		++s;
-		++len;
-	}
-	return (len);
+	return ('a' <= c && c <= 'z');
 }

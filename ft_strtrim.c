@@ -24,10 +24,10 @@ char	*ft_strtrim(char const *s)
 	x = -1;
 	l = 0;
 	t = 0;
-	while (ft_isspace(*(s + ++x)))
+	while (ft_copinto_space(*(s + ++x)))
 		l++;
 	while (*(s + x++))
-		t = ft_isspace(*(s + x - 1)) ? t + 1 : 0;
+		t = ft_copinto_space(*(s + x - 1)) ? t + 1 : 0;
 	r = ft_strnew(ft_strlen(s) - t - l);
 	if (!r)
 		return (NULL);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcontador.c                                   :+:      :+:    :+:   */
+/*   ft_copinto_contador.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		ft_strcontador(char const *str, char c)
+int		ft_copinto_contador(char const *str, char c)
 {
 	size_t	co;
 	int		i;

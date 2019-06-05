@@ -14,8 +14,5 @@
 
 int		ft_isalpha(int c)
 {
-	if (ft_tolower(c) || ft_toupper(c))
-		return (1);
-	else
-		return (0);
+	return (ft_copinto_issuper(c) || ft_copinto_islower(c));
 }
