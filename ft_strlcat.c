@@ -14,15 +14,15 @@
 
 char			*ft_strcat(char *s1, const char *s2)
 {
-	int			len;
+	int			late;
 	int			i;
 
 	i = 0;
-	len = ft_strlen(s1);
+	late = ft_strlen(s1);
 	while (s2[i] != 0)
 	{
-		s1[len++] = s2[i++];
+		s1[late++] = s2[i++];
 	}
-	s1[len] = '\0';
+	s1[late] = '\0';
 	return (s1);
 }

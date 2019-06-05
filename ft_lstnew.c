@@ -6,35 +6,29 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 21:30:27 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/04 17:33:25 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/04 22:57:36 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list				*ft_lstnew(void const *content, size_t content_size)
+t_list			*ft_lstnew(void const *content, size_t content_size)
 {
-	t_list	*list;
+	t_list		*out;
 
-	list = (t_list *)malloc(sizeof(*list));
-	if (!list)
+	if (!(out = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);
-	if (!content)
+	if (content == NULL)
 	{
-		list->content = NULL;
-		list->content_size = 0;
+		out->content = NULL;
+		out->content_size = 0;
+		out->next = NULL;
+		return (out);
 	}
-	else
-	{
-		list->content = malloc(content_size);
-		if (!list->content)
-		{
-			free(list);
-			return (NULL);
-		}
-		ft_memcpy(list->content, content, content_size);
-		list->content_size = content_size;
-	}
-	list->next = NULL;
-	return (list);
+	if (!(out->content = (void*)malloc(content_size)))
+		return (NULL);
+	ft_memcpy(out->content, content, content_size);
+	out->content_size = content_size;
+	out->next = NULL;
+	return (out);
 }
