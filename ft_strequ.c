@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 19:17:16 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/06 01:53:45 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/06 11:21:15 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int			ft_strequ(char const *s1, char const *s2)
 {
-	return (!ft_strcmp((char *)s1, (char *)s2));
+	return ((s1 && s2) && !ft_strcmp((char *)s1, (char *)s2));
 }
