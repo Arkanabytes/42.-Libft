@@ -6,7 +6,7 @@
 #    By: copinto- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/30 22:32:04 by copinto-          #+#    #+#              #
-#    Updated: 2019/06/02 00:04:49 by copinto-         ###   ########.fr        #
+#    Updated: 2019/06/05 21:27:44 by copinto-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,9 +64,11 @@ ft_strnew.c \
 ft_strnstr.c \
 ft_strrchr.c \
 ft_strsplit.c \
+ft_strnstr.c \
 ft_strstr.c \
 ft_strsub.c \
 ft_strtrim.c \
+ft_strrchr.c \
 ft_tolower.c \
 ft_copinto_contador.c \
 ft_copinto_islower.c \
@@ -78,6 +80,7 @@ ft_lstdel.c \
 ft_lstadd.c \
 ft_lstiter.c \
 ft_lstmap.c
+
 OBJECTS = $(SRCS:.c=.o)
 
 all: $(NAME)

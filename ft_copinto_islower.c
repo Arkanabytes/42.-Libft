@@ -6,13 +6,13 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 06:41:36 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/05 06:41:49 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/05 21:30:02 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_copinto_islower(int c)
+int		ft_copinto_islower(char c)
 {
 	return ('a' <= c && c <= 'z');
 }

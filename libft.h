@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 00:30:35 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/05 06:35:06 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/05 21:29:46 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					ft_atoi(char *str);
 void				ft_putstr(char const *s);
 int					ft_strcmp(char *s1, char *s2);
 char				*ft_strcat(char *s1, const char *s2);
@@ -65,15 +66,19 @@ void				*ft_memset(void *b, int c, size_t len);
 int					ft_isalpha(int c);
 char				*ft_strcat(char *s1, const char *s2);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
+char				*ft_strrchr(const char *s, int c);
 int					ft_tolower(int c);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
+char				*ft_strnstr(const char *s1, const char *s2, size_t n);
+char				**ft_strsplit(char const *s, char c);
 char				*ft_strjoin(char const *s1, char const *s2);
 void				ft_strclr(char *s);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_isprint(int c);
 char				*ft_strchr(const char *s, int c);
-int					ft_copinto_islower(int c);
-int					ft_copinto_issuper(int c);
+char				*ft_strnstr(const char *s1, const char *s2, size_t n);
+int					ft_copinto_islower(char c);
+int					ft_copinto_issuper(char c);
 int					ft_copinto_lol(long c, int len);
 int					ft_copinto_contador(char const *str, char c);
 t_list				*ft_lstnew(void const *content, size_t content_size);
