@@ -6,21 +6,23 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 16:07:35 by copinto-          #+#    #+#             */
-/*   Updated: 2019/05/31 04:15:06 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/06 02:09:17 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	int			i;
+	unsigned char	*cadena1;
+	unsigned char	*cadena2;
 
-	i = 0;
-	while (s1[i] != '\0')
+	cadena1 = (unsigned char *)s1;
+	cadena2 = (unsigned char *)s2;
+	while (*cadena1 && (*cadena1 == *cadena2))
 	{
-		if (s1[i] != s2[i] - s2[i])
-			i++;
+		cadena1++;
+		cadena2++;
 	}
-	return (s1[i] - s2[i]);
+	return (*cadena1 - *cadena2);
 }

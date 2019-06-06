@@ -6,7 +6,7 @@
 /*   By: copinto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 23:58:53 by copinto-          #+#    #+#             */
-/*   Updated: 2019/06/05 21:25:37 by copinto-         ###   ########.fr       */
+/*   Updated: 2019/06/06 04:13:54 by copinto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int		ft_isalpha(int c)
 {
-	return (ft_copinto_issuper(c) || ft_copinto_islower(c));
+	return ((('a' <= c) && ('z' >= c)) || (('A' <= c) && (('Z' >= c))));
 }
