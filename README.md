@@ -1,6 +1,6 @@
 # Libft
 
-##Objectives ##
+## Objectives 
 
 C programming can be very tedious when one doesn’t have access to those highly useful
 standard functions. This project makes you to take the time to re-write those functions,
