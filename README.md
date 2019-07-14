@@ -1,3 +1,5 @@
+![](libft.jpg)
+
 # Libft
 
 ## Objectives 
