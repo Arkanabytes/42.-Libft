@@ -61,3 +61,9 @@ tolower		| | | ft_get_parent_path
 ### Execution:
 
 `gcc "file_main" libft.a && ./a.out` | Compile a main with the library, and then run the program.
+
+
+## Authors
+
+
+* [*Consuelo Alejandra Pinto Toro*](https://github.com/hatejandra)
